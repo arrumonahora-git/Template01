@@ -1,62 +1,108 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+:root {
+    --fonte1: "Verdana", Geneva, Tahoma, sans-serif;
+    --fonte2: "Roboto", sans-serif;
+    --fonte3: "Cookie", cursive;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
 }
+:root {
+    --main-font: 'Roboto', sans-serif;
+}
+/* defalt page {
+} */
 body {
-    background-color: rgb(212, 212, 203);
-}
-
-html, body {
-    min-width: 100vh;
-   background-color: darkgray;
+    background-color: darkgray;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 header {
     background-color: black;
-    color: white;
+    color: whitesmoke;
     text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
 }
 header > h1 {
-    padding: 50px;
-    font-variant: small-caps;
+
+    font-family: var(--fonte3);
 }
 
-header > p {
-    padding-bottom: 50px;
+header  p {
     font-style: italic;
 }
-a {
+header a {
     color: white;
-    text-decoration: none;
     font-weight: bold;
 }
-a:hover, footer a:hover {
-    color: rgb(255, 255, 255);
+a:hover {
+    color: red;
     text-decoration: underline;
 }
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    font-family: var(--fonte2);
 }
 section.normal {
-    background-color: rgb(255, 255, 255) ;
-    color: black;
+    background-color: rgba(0, 0, 0, 0.358);    
+    color: black; 
+
 }
 section.imagen {
-    background-color: rgb(102, 99, 99);
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.547);
     color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    box-shadow: inset 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
 }
 section.imagen  p {
-    width: 400px;
-    background-color: rgb(85, 70, 70);
+    border-radius: 10px 10px 10px 10px;
+}
+section p {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    font-family: var(--fonte3);
+}
+section#img001 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+section#img002 {
+    background-image: url(imagens/background002.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+footer {
+    background-color: black;
+    color: aliceblue;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px 10px 10px 10px;  
+    margin: 10px 10px 10px 10px;   
+    font-family: var(--fonte2);
 }
 footer a {
-  background-color: black;
-    text-align: center;
-    font-weight: bold;
     color: aliceblue;
-    padding: 10px;
+    font-weight: bold; 
+}
+footer a:hover {
+    color: red;
+    text-decoration: underline;
+
 }
